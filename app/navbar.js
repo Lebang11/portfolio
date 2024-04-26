@@ -4,9 +4,7 @@ import Image from 'next/image';
 export default function NavBar({children}) {
     return (
         <nav className="navbar navbar-expand-sm " style={{background: "black", borderBottomColor:"white"}}>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="fals" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
+      
                 <div className='d-flex justify-content-center w-50'>
 <div>
                             <Image 
@@ -47,7 +45,9 @@ export default function NavBar({children}) {
                         
                     </ul>
                 </div>
-        
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="fals" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                    </button>
       </nav>
     );
 }
