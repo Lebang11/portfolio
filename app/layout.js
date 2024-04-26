@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
       </head>
       <body className={inter.className}>
-      <nav className="navbar navbar-expand-xl d-flex justify-content-center" style={{background: "black", borderBottomColor:"white", border}}>
+      <nav className="navbar navbar-expand-xl d-flex justify-content-center" style={{background: "black", borderBottomColor:"white"}}>
 
         <div className="text-light navbar-brand" style={{color: "black"}}>Lebang Nong</div>
         
