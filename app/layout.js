@@ -11,7 +11,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha256-2TnSHycBDAm2wpZmgdi0z81kykGPJAkiUY+Wf97RbvY=" crossOrigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+      </head>
+      <body className={inter.className}>
+      <nav className="navbar navbar-expand-xl d-flex justify-content-center" style={{background: "black", borderBottomColor:"white", border}}>
+
+        <div className="text-light navbar-brand" style={{color: "black"}}>Lebang Nong</div>
+        
+      </nav>
+        {children}
+          <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossOrigin="anonymous"
+      ></script>  
+      </body>
     </html>
   );
 }
