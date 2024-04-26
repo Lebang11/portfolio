@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NavBar from "./navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,42 +14,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=
-"anonymous"/>
-<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Major+Mono+Display&display=swap" rel="stylesheet"></link>
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Gruppo&family=Major+Mono+Display&display=swap" rel="stylesheet"/>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha256-2TnSHycBDAm2wpZmgdi0z81kykGPJAkiUY+Wf97RbvY=" crossOrigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
       </head>
       <body className={inter.className}>
-      <nav className="navbar navbar-expand-sm d-flex justify-content-end" style={{background: "black", borderBottomColor:"white"}}>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="fals" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                
-            
-                <div id="main-nav" className=" me-3 collapse navbar-collapse justify-content-end align-center">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a href="/login" className="nav-link text-light" >
-                                Intro
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="/login" className="nav-link text-light" >
-                                Log out
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="/login" className="nav-link text-light" >
-                                Projects
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </div>
-        
-      </nav>
+        <NavBar/>
         {children}
           <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

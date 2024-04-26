@@ -4,19 +4,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem;
+  /* padding: 6rem; */
   min-height: 100vh;
   min-width: 100vw;
   /* background-color: black; */
   background-image: url('assets/2148459684.jpg');
-  background-size: cover;
+  background-size:contain;
   
 }
 
 .intro {
   width: 100vw;
-  max-width: 700px; 
+  max-width: 900px; 
   backdrop-filter: blur(10px);
+}
+
+.sectionbox {
+  margin: 4px;
+	border-style: solid;
+/* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+	border-image: linear-gradient(to right, #181818, #eee, #181818) 0.5 0% 100%;
+  
 }
 
 .description {
