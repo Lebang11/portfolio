@@ -12,13 +12,41 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=
+"anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Major+Mono+Display&display=swap" rel="stylesheet"></link>
+
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha256-2TnSHycBDAm2wpZmgdi0z81kykGPJAkiUY+Wf97RbvY=" crossOrigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
       </head>
       <body className={inter.className}>
-      <nav className="navbar navbar-expand-xl d-flex justify-content-center" style={{background: "black", borderBottomColor:"white"}}>
-
-        <div className="text-light navbar-brand" style={{color: "black"}}>Lebang Nong</div>
+      <nav className="navbar navbar-expand-sm d-flex justify-content-end" style={{background: "black", borderBottomColor:"white"}}>
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="fals" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                    </button>
+                
+            
+                <div id="main-nav" className=" me-3 collapse navbar-collapse justify-content-end align-center">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a href="/login" className="nav-link text-light" >
+                                Intro
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="/login" className="nav-link text-light" >
+                                Log out
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="/login" className="nav-link text-light" >
+                                Projects
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
         
       </nav>
         {children}

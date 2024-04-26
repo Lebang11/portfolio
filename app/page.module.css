@@ -1,11 +1,22 @@
+
+
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-color: black;
+  min-width: 100vw;
+  /* background-color: black; */
+  background-image: url('assets/2148459684.jpg');
+  background-size: cover;
+  
+}
+
+.intro {
+  width: 100vw;
+  max-width: 700px; 
+  backdrop-filter: blur(10px);
 }
 
 .description {
@@ -17,6 +28,11 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+}
+
+.namediv {
+  background: none;
+  width:50%;
 }
 
 .description a {
