@@ -55,6 +55,13 @@ export default function Projects({children}) {
             "description": "",
             "category": "Back-end"
     
+        },
+        {
+            "name": "NextJS",
+            "icon": "devicon-nextjs-original-wordmark",
+            "description": "",
+            "category": "Front-end/Back-end"
+    
         }
     ]
 
