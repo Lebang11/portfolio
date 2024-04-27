@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import "../styles/scss/customTheme.scss"
 import MyPic from "./assets/IMG_1320.JPEG"
 import Intro from "./intro";
 import About from "./about";

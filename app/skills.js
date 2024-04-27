@@ -3,6 +3,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import MyPic from "./assets/IMG_1320.JPEG";
+import "../styles/scss/customTheme.scss"
+
 
 export default function Projects({children}) {
     const SkillCards = [
@@ -63,23 +65,33 @@ export default function Projects({children}) {
                     <p  className="text-light display-1 me-3 text-center" style={
                             {fontFamily: "Major Mono Display",
                             fontWeight: 400, overflow: "overlay"}}>
+                            
                             Skills
                     </p>
-                    <div class="container d-flex justify-content-center align-items-center">
-                        <div class="row">
+                    <ul className="nav nav-tabs" id="myTab" role="tablist">
+                        <li className="nav-item" role="presentation">
+                            <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Languages/Frameworks</button>
+                        </li>
+                        <li className="nav-item" role="presentation">
+                            <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Soft Skills</button>
+                        </li>
+                        
+                    </ul>
+                    <div className="container d-flex justify-content-center align-items-center">
+                        <div className="row">
                             {
                                 SkillCards.map((skill) => {
                                     return (
-                                        <div class="col text-light p-4">
-                                            <div class="card bg-transparent border d-flex align-items-center justify-content-center">
-                                                <i class={skill.icon + " text-light mt-4"} style={{
+                                        <div className="col text-light p-4">
+                                            <div className="card bg-transparent border d-flex align-items-center justify-content-center">
+                                                <i className={skill.icon + " text-light mt-4"} style={{
                                                     fontSize: "20vb"
                                                 }}></i>
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-light text-center">{skill.name}</h5>
+                                                <div className="card-body">
+                                                    <h5 className="card-title text-light text-center">{skill.name}</h5>
                                                     <p className="card-subtitle text-light text-center fw-lighter" >{skill.category}</p>
 
-                                                    <p id={skill.name + "-exp"} class=" text-light text-center blockquote-footer mt-3" hidden>
+                                                    <p id={skill.name + "-exp"} className=" text-light text-center blockquote-footer mt-3" hidden>
                                                         <small >
                                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis provident eius quia et molestias ut modi.	
 
@@ -87,7 +99,7 @@ export default function Projects({children}) {
 
                                                     <div className="d-flex justify-content-center mt-3">
 
-                                                    <a class="btn btn-outline-light" onClick={(e) => {
+                                                    <a className="btn btn-outline-light" onClick={(e) => {
 
                                                         if (document.getElementById(skill.name + "-exp").hidden == false) {
                                                             document.getElementById(skill.name + "-exp").hidden = true;
