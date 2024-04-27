@@ -7,8 +7,8 @@ export default function Intro() {
     return (
         <div className="">
             <section id="intro" className={styles.intro}>
-            <div className={`d-flex flex-row justify-content-end p-4 ${styles.sectionboxIntro}`}>
-                    <div className={styles.namediv}>
+            <div className={`row p-4 ${styles.sectionboxIntro}`}>
+                    <div className={styles.namediv + " col-6"}>
                         <p  className="text-light display-1 me-3 text-center" style={
           {fontFamily: "Major Mono Display",
           fontWeight: 400, overflow: "overlay"}}>
@@ -17,9 +17,7 @@ export default function Intro() {
                             color: "#6a6a6a"
                         }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint error, sit ea animi asperiores eveniet reprehenderit eius atque neque tempore veniam quo facilis dolores vitae doloribus modi possimus. Perspiciatis, fugiat?</p>
                     </div>
-                    <div style={{
-            width:"50%"
-          }}>
+                    <div className="col-6">
             <Image 
                 style={{
                     borderRadius:10

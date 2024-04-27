@@ -81,8 +81,9 @@ export default function Projects({children}) {
 
                                                     <p id={skill.name + "-exp"} class=" text-light text-center blockquote-footer mt-3" hidden>
                                                         <small >
-                                                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                                                            </small></p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis provident eius quia et molestias ut modi.	
+
+                                                        </small></p>
 
                                                     <div className="d-flex justify-content-center mt-3">
 
