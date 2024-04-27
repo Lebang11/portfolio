@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function NavBar({children}) {
     return (
-        <nav className="navbar navbar-expand-sm " style={{background: "black", borderBottomColor:"white"}}>
+        <nav className="navbar navbar-expand-sm fixed-top" style={{background: "black", borderBottomColor:"white"}}>
       
                 <div className='d-flex justify-content-center w-50'>
 <div>
@@ -36,7 +36,14 @@ export default function NavBar({children}) {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/login" className="nav-link text-light" style={{
+                            <a href="#skills" className="nav-link text-light" style={{
+                              fontFamily: "Gruppo"
+                            }}>
+                                Skills
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#projects" className="nav-link text-light" style={{
                               fontFamily: "Gruppo"
                             }}>
                                 Projects

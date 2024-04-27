@@ -5,9 +5,9 @@ import MyPic from "./assets/IMG_1320.JPEG";
 export default function Intro() {
 
     return (
-        
-        <section id="intro" className={styles.intro}>
-            <div className={`d-flex flex-row justify-content-end p-4 ${styles.sectionbox}`}>
+        <div className="">
+            <section id="intro" className={styles.intro}>
+            <div className={`d-flex flex-row justify-content-end p-4 ${styles.sectionboxIntro}`}>
                     <div className={styles.namediv}>
                         <p  className="text-light display-1 me-3 text-center" style={
           {fontFamily: "Major Mono Display",
@@ -34,6 +34,8 @@ export default function Intro() {
             </div>
        
         </section>
+        </div>
+        
     );
 }
 
