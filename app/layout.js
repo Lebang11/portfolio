@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossOrigin="anonymous"
       ></script>  
+      <script src="https://kit.fontawesome.com/7efbc16cd7.js" crossOrigin="anonymous"></script>
       </body>
     </html>
   );
