@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import MyPic from "./assets/IMG_1320.JPEG";
+import MyPic from "./assets/portait_enhanced.png";
 
 export default function Intro() {
 

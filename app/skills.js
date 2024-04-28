@@ -116,6 +116,16 @@ export default function Projects({children}) {
             "icon": "devicon-firebase-plain",
             "description": "",    
         },
+        {
+            "name": "MongoDB",
+            "icon": "devicon-mongodb-plain",
+            "description": "",
+        },
+        {
+            "name": "MySQL",
+            "icon": "devicon-mysql-original",
+            "description": "",
+        }
     ];
 
     const softSkillCards = [
@@ -159,7 +169,7 @@ export default function Projects({children}) {
                     <nav>
                         <div className="nav nav-tabs" id="myTab" role="tablist">
                             <button className="nav-link active" id="languages-tab" data-bs-toggle="tab" data-bs-target="#languages" type="button" role="tab" aria-controls="languages" aria-selected="true">Languages/Frameworks</button>
-                            <button className="nav-link" id="cloud-tab" data-bs-toggle="tab" data-bs-target="#cloud" type="button" role="tab" aria-controls="cloud" aria-selected="false">Cloud</button>
+                            <button className="nav-link" id="cloud-tab" data-bs-toggle="tab" data-bs-target="#cloud" type="button" role="tab" aria-controls="cloud" aria-selected="false">Cloud/Databases</button>
                             
                             <button className="nav-link" id="softskills-tab" data-bs-toggle="tab" data-bs-target="#softskills" type="button" role="tab" aria-controls="softskills" aria-selected="false">Soft Skills</button>
 
@@ -176,7 +186,7 @@ export default function Projects({children}) {
                                                 <div id={skill.name + `-id`} className="col-lg-3 col-md-4 col-sm-6 text-light p-4">
                                                     <div className="card bg-transparent border d-flex align-items-center justify-content-center">
                                                         <i className={skill.icon + " text-light mt-4"} style={{
-                                                            fontSize: "15vb"
+                                                            fontSize: "7rem"
                                                         }}></i>
                                                         <div className="card-body">
                                                             <h5 className="card-title text-light text-center">{skill.name}</h5>
@@ -221,10 +231,10 @@ export default function Projects({children}) {
                                     {
                                         softSkillCards.map((skill) => {
                                             return (
-                                                <div className="col-lg-3 col-md-4 col-sm-6 text-light p-4">
+                                                <div id={skill.name + `-id`} className="col-lg-3 col-md-4 col-sm-6 text-light p-4">
                                                     <div className="card bg-transparent border d-flex align-items-center justify-content-center">
                                                         <i className={skill.icon + " text-light mt-4"} style={{
-                                                            fontSize: "15vb"
+                                                            fontSize: "7rem"
                                                         }}></i>
                                                         <div className="card-body">
                                                             <h5 className="card-title text-light text-center">{skill.name}</h5>
@@ -239,13 +249,16 @@ export default function Projects({children}) {
                                                             <div className="d-flex justify-content-center mt-3">
 
                                                             <a className="btn btn-outline-light" onClick={(e) => {
-
                                                                 if (document.getElementById(skill.name + "-exp").hidden == false) {
+                                                                    document.getElementById(skill.name + `-id`).classList.remove(...['col-xl-12','col-lg-12', 'col-md-12', 'col-sm-12']);
+                                                                    document.getElementById(skill.name + `-id`).classList.add(...['col-lg-3', 'col-md-4', 'col-sm-6']);
                                                                     document.getElementById(skill.name + "-exp").hidden = true;
                                                                 } else {
                                                                     document.getElementById(skill.name + "-exp").hidden = false
+                                                                    document.getElementById(skill.name + `-id`).classList.remove(...['col-lg-3', 'col-md-4', 'col-sm-6']);
+                                                                    document.getElementById(skill.name + `-id`).classList.add(...['col-xl-12','col-lg-12', 'col-md-12', 'col-sm-12']);
+
                                                                 }
-                                                                
                                                             }}>Experience</a>
                                                             
                                                             </div>
@@ -264,10 +277,10 @@ export default function Projects({children}) {
                                     {
                                         cloudSkillCards.map((skill) => {
                                             return (
-                                                <div className="col-lg-3 col-md-4 col-sm-6 text-light p-4  mw-25">
+                                                <div id={skill.name + `-id`} className="col-lg-3 col-md-4 col-sm-6 text-light p-4  mw-25">
                                                     <div className="card bg-transparent border d-flex align-items-center justify-content-center">
                                                         <i className={skill.icon + " text-light mt-4"} style={{
-                                                            fontSize: "15vb"
+                                                            fontSize: "7rem"
                                                         }}></i>
                                                         <div className="card-body">
                                                             <h5 className="card-title text-light text-center">{skill.name}</h5>
@@ -282,11 +295,15 @@ export default function Projects({children}) {
                                                             <div className="d-flex justify-content-center mt-3">
 
                                                             <a className="btn btn-outline-light" onClick={(e) => {
-
                                                                 if (document.getElementById(skill.name + "-exp").hidden == false) {
+                                                                    document.getElementById(skill.name + `-id`).classList.remove(...['col-xl-12','col-lg-12', 'col-md-12', 'col-sm-12']);
+                                                                    document.getElementById(skill.name + `-id`).classList.add(...['col-lg-3', 'col-md-4', 'col-sm-6']);
                                                                     document.getElementById(skill.name + "-exp").hidden = true;
                                                                 } else {
                                                                     document.getElementById(skill.name + "-exp").hidden = false
+                                                                    document.getElementById(skill.name + `-id`).classList.remove(...['col-lg-3', 'col-md-4', 'col-sm-6']);
+                                                                    document.getElementById(skill.name + `-id`).classList.add(...['col-xl-12','col-lg-12', 'col-md-12', 'col-sm-12']);
+
                                                                 }
                                                                 
                                                             }}>Experience</a>
