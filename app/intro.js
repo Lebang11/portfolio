@@ -15,7 +15,9 @@ export default function Intro() {
                             Lebang <br/>Nong</p>
                         <p className="lead fs-6" style={{
                             color: "#6a6a6a"
-                        }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint error, sit ea animi asperiores eveniet reprehenderit eius atque neque tempore veniam quo facilis dolores vitae doloribus modi possimus. Perspiciatis, fugiat?</p>
+                        }}>Hey! I'm <span className="text-light">Lebang Nong </span>, a Full Stack Software Engineer specializing in <span style={{
+                            color: "PaleTurquoise"
+                        }}>web, mobile, cloud, and backend development. </span>I create robust, scalable applications with a focus on seamless user experiences. Explore my projects to see how I blend creativity and technology to build impactful solutions.</p>
                     </div>
                     <div className="col-6">
             <Image 

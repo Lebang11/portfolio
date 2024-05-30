@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 
 
-export default function About({children}) {
+export default function Contact({children}) {
     return (
         <section id="about" >
             <div className={`row p-4 pb-0`}>
