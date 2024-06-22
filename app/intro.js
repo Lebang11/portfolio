@@ -20,17 +20,17 @@ export default function Intro() {
                             }}
                         layout="responsive"
                         src={MyPic}
-                        width={400}
-                        height={400}
+                        width={350}
+                        height={350}
                         alt="My picture"
                         />
                     </div>
                     <div className={styles.namediv + "col-lg-6 col-md-6 col-sm-6 col-xs-12 "}>
-                        <p  className="text-light display-1 me-3 text-center" style={
-          {fontFamily: "Major Mono Display",
-          fontWeight: 400, overflow: "overlay"}}>
-                            Lebang <br/>Nong</p>
-                        <p className="lead fs-6 text-center" style={{
+                        <p  className="text-light display-3 me-3 text-center mt-3" style={
+                                {fontFamily: "Major Mono Display",
+                                fontWeight: 400, overflow: "overlay"}}>
+                            Lebang Nong</p>
+                        <p className="lead fs-6 text-start" style={{
                             color: "#6a6a6a"
                         }}>Hey! I'm <span className="text-light">Lebang Nong </span>, a Full Stack Software Engineer specializing in <span style={{
                             color: "PaleTurquoise"

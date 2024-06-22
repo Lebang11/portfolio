@@ -125,6 +125,11 @@ export default function Projects({children}) {
             "name": "MySQL",
             "icon": "devicon-mysql-original",
             "description": "",
+        },
+        {
+            "name": "PostgresSQL",
+            "icon": "devicon-postgresql-plain",
+            "description": ""
         }
     ];
 
@@ -152,6 +157,11 @@ export default function Projects({children}) {
         {
             "name": "Critical thinking",
             "icon": "fa-solid fa-lightbulb",
+            "description": ""
+        },
+        {
+            "name": "Game development",
+            "icon": "fa-solid fa-gamepad",
             "description": ""
         }
     ]
