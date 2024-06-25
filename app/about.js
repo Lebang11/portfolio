@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 export default function About({children}) {
     return (
         <section id="about" className={styles.intro}>
-            <motion.div animate={{scale:1}} initial ={{scale: 0}} transition={{duration: 2}} className={`row`}>
+            <motion.div animate={{scale:1}} initial ={{scale: 0}} transition={{duration: 2}} className={`row px-3`}>
                 {/* <div className="d-flex flex-xl-column flex-lg-column flex-md-column flex-xs-column-reverse flex-sm-column-reverse  justify-content-center align-items-center "> */}
                     <div className="card bg-transparent col-6">
                         <div className="d-flex flex-column gap-3 align-items-center w-100">

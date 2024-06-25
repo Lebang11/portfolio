@@ -18,7 +18,8 @@
     "react-animations": "^1.0.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
-    "react-navigation": "^5.0.0"
+    "react-navigation": "^5.0.0",
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "sass": "^1.75.0"
