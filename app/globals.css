@@ -139,6 +139,12 @@ body {
   transition-duration: .3s;
 }
 
+/* Email*/
+.containerFive:hover {
+  background-color: #eaee76;
+  transition-duration: .3s;
+}
+
 .socialContainer:active {
   transform: scale(0.9);
   transition-duration: .3s;
